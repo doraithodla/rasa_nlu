@@ -53,19 +53,19 @@ python -m rasa_nlu.server &
 ### Basic test
 The below command can be executed for either method used above.
 ```
-curl 'http://localhost:5000/parse?q=hello'
+curl "http://localhost:5000/parse?q=hello"
 ```
 
 # Example use
 
 ### Get the Server Status
 ```
-curl 'http://localhost:5000/status'
+curl "http://localhost:5000/status"
 ```
 
 ### Check the Server Version
 ```
-curl 'http://localhost:5000/version'
+curl "http://localhost:5000/version"
 ```
 
 ### Training New Models
@@ -93,7 +93,7 @@ The above command does the following:
 ### Parsing New Requests
 Make sure the above command has finished before executing the below. You can check with the `/status` command above.
 ```
-curl 'http://localhost:5000/parse?q=hello&model=test_model'
+curl "http://localhost:5000/parse?q=hello&model=test_model"
 ```
 
 # FAQ
